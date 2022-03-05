@@ -1,0 +1,46 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/knockout/3.2.0/knockout-min.js"></script>
+<h2>Makes</h2>
+<ul>
+  <li>Honda</li>
+  <li>Ford</li>
+  <li>VW</li>
+  <li>Toyota</li>
+</ul>
+
+<label>Select a make from the list above
+  <input type="text" placeholder="put make here" data-bind="textInput: makeSelection"></label>
+
+</br>
+<label>Select a model from the bellow results
+  <input type="text" placeholder="put model here" data-bind="textInput: modelSelection">
+</label>
+
+<h4>The make [<span data-bind="text: makeSelectionDisplay"></span>] has the following models:</h4>
+
+<!-- ko if: makes[makeSelection()] -->
+<div data-bind="with: makes[makeSelection()]">
+  <ul>
+    <!-- ko foreach: Object.keys(models()) -->
+    <li data-bind="text: $data"></li>
+    <!-- /ko -->
+  </ul>
+  
+  <h4>The model [<span data-bind="text: $parent.modelSelectionDisplay"></span>] has the following features:</h4>
+  <!-- ko if: models()[$parent.modelSelection()] -->
+  <div data-bind="with: models()[$parent.modelSelection()]">
+    <ul>
+      <!-- ko foreach: features() -->
+      <li data-bind="text: $data"></li>
+      <!-- /ko -->
+    </ul>
+
+    <label for="featureInput">
+      <input id="featureInput" type="text" data-bind="value: addFeatureInput">
+      <button data-bind="click: addFeature">Add feature</button
+    </label>
+    </br>
+    <button type="button" data-bind="click: removeLastFeature">Remove last feature</button>
+  </div>
+  <!-- /ko -->
+</div>
+<!-- /ko -->
