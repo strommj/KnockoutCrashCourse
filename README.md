@@ -11,13 +11,13 @@ Happy coding!
 
 Here are the instructions for the exercise:
 1) Loop through and display all models defined for the car make selected: https://codepen.io/strommj/pen/BamMXdY
- - Create variable to store the selected data from the input
- - Insert the necessary code to display this selection in the heading
- - Loop through and display all models defined in that make
+   - Create variable to store the selected data from the input
+   - Insert the necessary code to display this selection in the heading
+   - Loop through and display all models defined in that make
 2) Loop through and display all features for the model selected: https://codepen.io/strommj/pen/wvPNVrm
- - Repeat same steps for #1, but nested inside the previous html created. Comments show you where to put your code
+   - Repeat same steps for #1, but nested inside the previous html created. Comments show you where to put your code
 3) Add and remove feature buttons: https://codepen.io/strommj/pen/NWwoQwB
- - Add functions within the "Model" model to update the features in that view model
- - Attach the front end input to the view model
- - Attach the front end "add" button to add the selected text to the feature array
- - Attach the front end "remove" button to remove the last feature in the list.
+   - Add functions within the "Model" model to update the features in that view model
+   - Attach the front end input to the view model
+   - Attach the front end "add" button to add the selected text to the feature array
+   - Attach the front end "remove" button to remove the last feature in the list.
