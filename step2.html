@@ -1,0 +1,39 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/knockout/3.2.0/knockout-min.js"></script>
+<h2>Makes</h2>
+<ul>
+  <li>Honda</li>
+  <li>Ford</li>
+  <li>VW</li>
+  <li>Toyota</li>
+</ul>
+
+<label>Select a make from the list above
+  <input type="text" placeholder="put make here" data-bind="textInput: makeSelection"></label>
+
+</br>
+<label>Select a model from the bellow results
+  <input type="text" placeholder="put model here" data-bind="textInput: modelSelection">
+</label>
+
+<h4>The make [<span data-bind="text: makeSelectionDisplay"></span>] has the following models:</h4>
+
+<!-- ko if: makes[makeSelection()] -->
+<div data-bind="with: makes[makeSelection()]">
+  <ul>
+    <!-- ko foreach: Object.keys(models()) -->
+    <li data-bind="text: $data"></li>
+    <!-- /ko -->
+  </ul>
+  
+  <h4>The model [<span>Fill this span tag with the selected car name!</span>] has the following features:</h4>
+  <!-- ko if: null check for car model -->
+  <div> <!-- set the context to the car model selected -->
+    <ul>
+      <!-- ko foreach: loop through features -->
+      <li></li> <!-- put data inside this li element -->
+      <!-- /ko -->
+    </ul>
+  </div>
+  <!-- /ko -->
+</div>
+<!-- /ko -->

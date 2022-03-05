@@ -1,0 +1,23 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/knockout/3.2.0/knockout-min.js"></script>
+<h2>Makes</h2>
+<ul>
+  <li>Honda</li>
+  <li>Ford</li>
+  <li>VW</li>
+  <li>Toyota</li>
+</ul>
+
+<label>Select a make from the list above
+  <input type="text" placeholder="put make here" data-bind="textInput: makeSelection"></label>
+
+<h4>The make [<span>display the selected make here!</span>] has the following models:</h4>
+
+<!-- ko if: null check for selection -->
+<div> <!-- use the context of the selected make -->
+  <ul>
+    <!-- ko foreach: loop through the car models for the selected make -->
+    <li></li> <!-- use knockout to populate this list! -->
+    <!-- /ko -->
+  </ul>
+</div>
+<!-- /ko -->
