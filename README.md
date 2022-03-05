@@ -20,4 +20,4 @@ Here are the instructions for the exercise:
 		a. Add functions within the "Model" model to update the features in that view model
 		b. Attach the front end input to the view model
 		c. Attach the front end "add" button to add the selected text to the feature array
-Attach the front end "remove" button to remove the last feature in the list.![image](https://user-images.githubusercontent.com/33530655/156862533-1e64555c-0669-4663-86b6-7e163fafa4ed.png)
+		d. Attach the front end "remove" button to remove the last feature in the list.
