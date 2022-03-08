@@ -1,6 +1,6 @@
 Here is hopefully a more technical exercise to apply your knockout knowledge to. The purpose is to get a better grasp on important concepts via a slightly less simple hello world tutorial on knockout.js
 
-First off, this is copied from a codepen sandbox, so this won't run by itself. The codepen is here if it's still up: https://codepen.io/strommj/pen/xxPQaBP
+First off, this is copied from a codepen sandbox, so this won't run by itself. The codepen is here if it's still up: https://codepen.io/strommj/pen/WNXBedP
 
 The application has a couple parts. It shows a list of currently available car makes in the world (there are only 4, the world ended). Then it forces you to type in the car make you would like to learn more about.
 
